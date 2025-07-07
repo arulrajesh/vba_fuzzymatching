@@ -117,7 +117,7 @@ Public Function Fuzzy_Match(ByRef targetS As String, ByRef MatchRange As Range, 
                         
             Else
                 
-                tcheck = String_Similarity(targetS, bw)
+                tcheck = String_Similarity(targetS, S2)
                 
                 'If threshold isn't met, then string isn't added to dictionary
                 If tcheck >= Threshold Then
